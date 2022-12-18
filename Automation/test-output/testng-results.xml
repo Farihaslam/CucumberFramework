@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-19T02:29:41 PKT" name="Default suite" finished-at="2022-12-19T02:30:15 PKT" duration-ms="34091">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRun.TestRunner@7c37508a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-12-19T02:29:41 PKT" name="Default test" finished-at="2022-12-19T02:30:15 PKT" duration-ms="34091">
+      <class name="TestRun.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRun.TestRunner@7c37508a]" started-at="2022-12-19T02:29:41 PKT" name="setUpClass" finished-at="2022-12-19T02:29:42 PKT" duration-ms="683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@8af1c49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRun.TestRunner@7c37508a]" started-at="2022-12-19T02:29:42 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-19T02:29:53 PKT" duration-ms="11209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Information of Subscription Packages"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify STC TV Plans and Details"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRun.TestRunner@7c37508a]" started-at="2022-12-19T02:29:53 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-19T02:30:02 PKT" duration-ms="9004" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Information of Subscription Packages"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify STC TV Plans and Details"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<3[0]> but was:<3[]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<3[0]> but was:<3[]>
+at org.junit.Assert.assertEquals(Assert.java:115)
+at org.junit.Assert.assertEquals(Assert.java:144)
+at PageObjects.LandingPage.GetAndCompareText(LandingPage.java:75)
+at PageObjects.LandingPage.PriceAndCurrencyDetails(LandingPage.java:94)
+at StepDefinition.Stc_tv_plans_steps.validate_prices_with_currency_for_all_countries(Stc_tv_plans_steps.java:35)
+at ✽.Validate Lite Price 2, Classic Prices 30 and Premium 6 with Currency BHD/month for all Countries Bahrain(file:///C:/Users/arshi/eclipse-workspace/Automation/src/test/java/Features/Stc_tv_plans.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRun.TestRunner@7c37508a]" started-at="2022-12-19T02:30:02 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-19T02:30:14 PKT" duration-ms="12096" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Information of Subscription Packages"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify STC TV Plans and Details"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRun.TestRunner@7c37508a]" started-at="2022-12-19T02:30:14 PKT" name="tearDownClass" finished-at="2022-12-19T02:30:15 PKT" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRun.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
